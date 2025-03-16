@@ -1,4 +1,4 @@
-import restaurantImage from './restaurant-image.jpeg'
+// import restaurantImage from './restaurant-image.jpeg'
 
 const content = document.querySelector('#content');
 
@@ -17,10 +17,10 @@ const loadHomepage = () => {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae laudantium rerum accusamus iste perspiciatis ex consequatur. Nisi, possimus eius qui soluta illum vero mollitia nihil ipsam porro cupiditate optio illo. Totam sit earum praesentium ex laborum qui itaque sed ipsum, nesciunt a odio quia eveniet maiores architecto error voluptatibus.';
   wrapper.appendChild(para)
   
-  const image = document.createElement('img');
-  image.src = restaurantImage
-  image.alt = ''
-  wrapper.appendChild(image)
+  // const image = document.createElement('img');
+  // image.src = restaurantImage
+  // image.alt = ''
+  // wrapper.appendChild(image)
 
   content.appendChild(wrapper)
 }

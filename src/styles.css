@@ -1,4 +1,117 @@
-/* styles.css */
+
+:root {
+  
+  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-bubblegum-sans: "Bubblegum Sans", sans-serif;
+
+  --bd-radius-1: 5px;
+  --shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+
+  --space-40: 0.25rem;
+  --space-80: 0.5rem;
+  --space-400: 1rem;
+
+  --fw-bold: 700;
+
+  --fs-60: 1.25rem;
+  --fs-1100: 2.5rem;
+}
+
+
+
+
+/* ===================
+   JOSH COMEAU'S RESET 
+   =================== */
+
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typographic tweaks! */
+body {
+  min-height: 100svh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: var(--ff-open-sans);
+}
+
+
+.header {
+  background: url('./black-and-white.jpeg') no-repeat center center / cover;
+  height: 500px;
+  text-align: center;
+}
+
+.header__title {
+  font-family: var(--ff-bubblegum-sans);
+  font-size: var(--fs-1100);
+  padding-block: var(--space-400);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-400);
+}
+
+.btn {
+  border: transparent;
+  border-radius: var(--bd-radius-1);
+  padding: var(--space-40) var(--space-80);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-700);
+  box-shadow: var(--shadow);
+}
+
 .btn[aria-selected='true'] {
-  background-color: yellow;
+  background-color: #aac849;
 }
