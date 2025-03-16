@@ -1,6 +1,8 @@
 
 :root {
   
+  --clr-white: hsl(0, 0%, 100%);
+
   --ff-open-sans: "Open Sans", sans-serif;
   --ff-bubblegum-sans: "Bubblegum Sans", sans-serif;
 
@@ -10,10 +12,13 @@
   --space-40: 0.25rem;
   --space-80: 0.5rem;
   --space-400: 1rem;
+  --space-700: 1.5rem;
 
+  --fw-medium: 500;
   --fw-bold: 700;
 
   --fs-60: 1.25rem;
+  --fs-850: 1.875rem;
   --fs-1100: 2.5rem;
 }
 
@@ -85,15 +90,28 @@ body {
 
 
 .header {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
   background: url('./black-and-white.jpeg') no-repeat center center / cover;
+  
   height: 500px;
-  text-align: center;
+  /* text-align: center; */
+  padding: var(--space-700);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__title {
+  
   font-family: var(--ff-bubblegum-sans);
   font-size: var(--fs-1100);
-  padding-block: var(--space-400);
+  /* padding-block: var(--space-400); */
 }
 
 .nav {
@@ -114,4 +132,21 @@ body {
 
 .btn[aria-selected='true'] {
   background-color: #aac849;
+}
+
+.intro {
+  width: 60%;
+  color: var(--clr-white);
+  padding: var(--space-400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-80)
+}
+
+.intro__title {
+  font-size: var(--fs-850);
+}
+
+.intro__text {
+  font-weight: var(--fw-medium);
 }
