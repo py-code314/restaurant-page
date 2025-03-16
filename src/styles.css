@@ -1,0 +1,4 @@
+/* styles.css */
+.btn[aria-selected='true'] {
+  background-color: yellow;
+}
