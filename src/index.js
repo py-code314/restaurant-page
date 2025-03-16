@@ -6,9 +6,9 @@ import menu from './menu.js'
 
 console.log('Welcome to our restaurant!');
 
-homepage()
-menu()
-contact()
+// homepage()
+// menu()
+// contact()
 
 const tabs = document.querySelector('.nav');
 const tabButtons = tabs.querySelectorAll('[role="tab"]')
@@ -19,20 +19,29 @@ const tabPanels = content.querySelectorAll('[role="tabpanel"]')
 console.log(tabPanels);
 
 function handleTabClick(event) {
-  // Hide all tab panels
-  tabPanels.forEach(tabPanel => tabPanel.hidden = true)
+  // Clear page
+  content.innerHTML = ''
 
   // Unselect all buttons
-  tabButtons.forEach(button => button.setAttribute('aria-selected', false))
+  tabButtons.forEach((button) => button.setAttribute('aria-selected', false));
 
   // Select current tab
-  event.currentTarget.setAttribute('aria-selected', true)
+  event.currentTarget.setAttribute('aria-selected', true);
 
-  // Show associated tab panel
-  const id = event.currentTarget.id
-  const tabPanel = content.querySelector(`[aria-labelledby="${id}"]`)
-  tabPanel.hidden = false;
+  // Show associated tab panel based on button id
+  const id = event.currentTarget.id;
+
+  if (id === 'home') {
+    homepage();
+  } else if (id === 'menu') {
+    menu();
+  } else {
+    contact();
+  }
 }
   
 
 tabButtons.forEach(button => button.addEventListener('click', handleTabClick))
+
+// Initial render
+homepage()

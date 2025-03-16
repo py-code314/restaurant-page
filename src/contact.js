@@ -4,7 +4,7 @@ const contactUs = () => {
   const wrapper = document.createElement('div');
   wrapper.role = 'tabpanel';
   wrapper.setAttribute('aria-labelledby', 'about');
-  wrapper.hidden = true;
+  // wrapper.hidden = true;
 
   const aboutUs = document.createElement('h2');
   aboutUs.textContent = 'About Us'

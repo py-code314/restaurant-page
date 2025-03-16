@@ -6,7 +6,7 @@ const showMenu = () => {
   const wrapper = document.createElement('div');
   wrapper.role = 'tabpanel';
   wrapper.setAttribute('aria-labelledby', 'menu');
-  wrapper.hidden = true
+  // wrapper.hidden = true
 
   wrapper.innerHTML += `
     <h2>Menu</h2>
