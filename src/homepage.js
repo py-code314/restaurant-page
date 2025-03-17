@@ -1,26 +1,19 @@
 import accessibilityImg from './images/icon-accessibility.svg';
 import privacyImg from './images/icon-privacy.svg';
-import giftCardImg from './images/icon-giftcard.svg';
+import giftCardImg from './images/icon-gift-card.svg';
 import jobsImg from './images/icon-jobs.svg';
 import pressImg from './images/icon-newspaper.svg';
 import subscribeImg from './images/icon-subscribe.svg';
-import restaurantImg from './images/image-restaurant.jpeg'
-import menuImg from './images/image-menu.jpeg'
-import barImg from './images/image-bar.jpeg'
-import chefImg from './images/image-chef.jpeg'
-import chocolatesImg from './images/image-chocolates.jpeg'
-import eventsImg from './images/image-events.jpeg'
+
 
 const content = document.querySelector('#content');
 const footer = document.querySelector('.footer');
+const statement = document.querySelector('.statement');
 
-/* Test code */
+
 const loadHomepage = () => {
   // Add content describing the restaurant
   content.innerHTML += `
-    
-
-
     <div class="tabpanel home" role="tabpanel"           aria-labelledby="home">
       <div class="intro">
         <h2 class="intro__title">Uncompromising Authenticity</h2>
@@ -51,7 +44,7 @@ const loadHomepage = () => {
         <div class="feature feature--chocolates">
           <a class="feature__name" href="#" onclick="event.preventDefault()">Chocolates</a>
         </div>
-        
+
         <div class="feature feature--events">
           <a class="feature__name" href="#" onclick="event.preventDefault()">Events</a>
         </div>     
@@ -100,6 +93,13 @@ const loadHomepage = () => {
       </ul>
     </div>
   `;
+
+  // Animate header
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      statement.classList.add('slide');
+    }, 1000);
+  });
 };
 
 export default loadHomepage;
