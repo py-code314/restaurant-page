@@ -5,6 +5,7 @@
   --clr-black: hsl(0, 0%, 0%);
   --clr-lime-green: hsl(74, 54%, 54%);
   --clr-dark-green: hsl(179, 98%, 18%);
+  --clr-dark-red: hsl(0, 100%, 27%);
 
   --ff-open-sans: "Open Sans", sans-serif;
   --ff-bubblegum-sans: "Bubblegum Sans", sans-serif;
@@ -18,6 +19,9 @@
   --space-400: 1rem;
   --space-700: 1.5rem;
   --space-1100: 2.5rem;
+
+  --height-img: 21.875rem;
+  --width-img: 15.625rem;
 
   --fw-medium: 500;
   --fw-bold: 700;
@@ -204,6 +208,56 @@ body {
 .tabpanel__text {
   flex: 1;
 } */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1100);
+  padding: var(--space-1100) 0;
+}
+
+.feature {
+  height: var(--height-img);
+  width: var(--width-img);
+  font-size: var(--fs-850);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.feature--restaurant {
+  background: url(./images/image-restaurant.jpeg) no-repeat center center / cover;
+  
+}
+.feature--menu {
+  background: url(./images/image-menu.jpeg) no-repeat center center / cover;
+
+}
+.feature--bar {
+  background: url(./images/image-bar.jpeg) no-repeat center center / cover;
+  
+}
+.feature--chef {
+  background: url(./images/image-chef.jpeg) no-repeat center center / cover;
+  
+}
+.feature--chocolates {
+  background: url(./images/image-chocolates.jpeg) no-repeat center center / cover;
+  
+}
+.feature--events {
+  background: url(./images/image-events.jpeg) no-repeat center center / cover;
+  
+}
+
+.feature__name {
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+.feature__name:hover {
+  color: var(--clr-lime-green);
+}
 
 .footer__links {
   padding: var(--space-80) var(--space-1100);

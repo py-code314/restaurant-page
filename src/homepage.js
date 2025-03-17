@@ -4,6 +4,12 @@ import giftCardImg from './images/icon-giftcard.svg';
 import jobsImg from './images/icon-jobs.svg';
 import pressImg from './images/icon-newspaper.svg';
 import subscribeImg from './images/icon-subscribe.svg';
+import restaurantImg from './images/image-restaurant.jpeg'
+import menuImg from './images/image-menu.jpeg'
+import barImg from './images/image-bar.jpeg'
+import chefImg from './images/image-chef.jpeg'
+import chocolatesImg from './images/image-chocolates.jpeg'
+import eventsImg from './images/image-events.jpeg'
 
 const content = document.querySelector('#content');
 const footer = document.querySelector('.footer');
@@ -18,38 +24,37 @@ const loadHomepage = () => {
     <div class="tabpanel home" role="tabpanel"           aria-labelledby="home">
       <div class="intro">
         <h2 class="intro__title">Uncompromising Authenticity</h2>
-        <p class="intro__para"><strong>Bistro Parisien</strong> opened in 7th arrondissement in the Spring of 1997. The bustling, romantic brasserie serves traditional French fare in the form of lunch and dinner every day, with brunch served on weekends.</p>
+        <p class="intro__para"><strong>Bistro Parisien</strong> opened in 7th arrondissement in the Spring of 1992. The bustling, romantic brasserie serves traditional French fare in the form of lunch and dinner every day, with brunch served on weekends.</p>
 
         <p class="intro__para">Bistro Parisien offers a wide selection of fresh seafood and shellfish, as well as bread and pastries that are baked fresh every day at our own bakery.</p>
 
         <button class="btn btn--reserve">Book a table</button>
       </div>
 
-      <div class="images">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      
-      </div>
-    </div>
+      <div class="features">
+        <div class="feature feature--restaurant">
+          <a class="feature__name" href="#" onclick="event.preventDefault()">Restaurant</a>
+        </div>
 
+        <div class="feature feature--menu">
+          <a class="feature__name" href="#" onclick="event.preventDefault()">Menu</a>
+        </div>
 
+        <div class="feature feature--bar">
+          <a class="feature__name" href="#" onclick="event.preventDefault()">Bar</a>
+        </div>
 
+        <div class="feature feature--chef">
+          <a class="feature__name" href="#" onclick="event.preventDefault()">Chef</a>
+        </div>
 
-
-      <h2 >About Our Restaurant</h2>
-      <div >
-      <p >
-        Located in the heart of Paris, our modern bistro blends sleek sophistication with the timeless charm of French cuisine. As you step inside, you're greeted by a spacious, minimalist interior with floor-to-ceiling windows that offer stunning views of the city. The contemporary design features clean lines and elegant lighting, creating a chic and inviting atmosphere. Our chefs prepare each dish with precision and passion, using locally sourced ingredients to honor traditional French techniques with a modern twist.      
-      </p>
-      <p >
-        Our location allows guests to explore the city's iconic landmarks, such as the Eiffel Tower and Notre-Dame Cathedral, just a short stroll away. Whether you're a local or a visitor, our restaurant is the perfect place to experience the authentic flavors and ambiance of Paris. Our staff is dedicated to providing exceptional service, ensuring that every visit is a memorable one. Come and indulge in a culinary journey that will leave you feeling like you're part of the city's dynamic present. 
-      </p>
+        <div class="feature feature--chocolates">
+          <a class="feature__name" href="#" onclick="event.preventDefault()">Chocolates</a>
+        </div>
+        
+        <div class="feature feature--events">
+          <a class="feature__name" href="#" onclick="event.preventDefault()">Events</a>
+        </div>     
       </div>
     </div>
   `;
