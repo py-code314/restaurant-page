@@ -209,19 +209,10 @@ body {
   color: var(--clr-white);
 }
 
-/* .tabpanel__text-container {
-  display: flex;
-  gap: var(--space-700);
-  padding-block: var(--space-700);
-}
-
-.tabpanel__text {
-  flex: 1;
-} */
-
 .features {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-1100);
   padding: var(--space-1100) 0;
 }
