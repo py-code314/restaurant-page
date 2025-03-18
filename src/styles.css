@@ -5,6 +5,7 @@
   --clr-dark-green: hsl(179, 98%, 18%);
   --clr-dark-red: hsl(0, 100%, 27%);
   --clr-salmon: hsl(6, 93%, 71%);
+  --clr-light-blue: rgb(124, 212, 242);
 
   --ff-open-sans: 'Open Sans', sans-serif;
   --ff-bubblegum-sans: 'Bubblegum Sans', sans-serif;
@@ -298,14 +299,16 @@ body {
 
 .menu,
 .lunch,
-.dinner {
+.dinner,
+.drinks {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .lunch__title,
-.dinner__title {
+.dinner__title,
+.drinks__title {
   font-size: var(--fs-750);
   text-transform: uppercase;
   background-color: var(--clr-salmon);
@@ -316,8 +319,13 @@ body {
   background-color: var(--clr-lime-green);
 }
 
+.drinks__title {
+  background-color: var(--clr-light-blue);
+}
+
 .lunch__categories,
-.dinner__categories {
+.dinner__categories,
+.drinks__categories {
   display: flex;
   padding: var(--space-700);
 }
@@ -325,12 +333,15 @@ body {
 .lunch__categories-left,
 .lunch__categories-right,
 .dinner__categories-left,
-.dinner__categories-right {
+.dinner__categories-right,
+.drinks__categories-left,
+.drinks__categories-right {
   padding: var(--space-700);
 }
 
 .lunch__categories-left,
-.dinner__categories-left {
+.dinner__categories-left,
+.drinks__categories-left {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -341,43 +352,55 @@ body {
   border-inline-end: 2px solid var(--clr-lime-green);
 }
 
+.drinks__categories-left {
+  border-inline-end: 2px solid var(--clr-light-blue);
+}
+
 .lunch__categories-left,
-.dinner__categories-left,
 .lunch__categories-right,
-.dinner__categories-right {
+.dinner__categories-left,
+.dinner__categories-right,
+.drinks__categories-left,
+.drinks__categories-right {
   flex: 1;
 }
 
 .lunch__subtitle,
-.dinner__subtitle {
+.dinner__subtitle,
+.drinks__subtitle {
   font-size: var(--fs-700);
 }
 
 .lunch__categories-left .lunch__list,
-.dinner__categories-left .dinner__list {
+.dinner__categories-left .dinner__list,
+.drinks__categories-left .drinks__list {
   text-align: right;
 }
 
 .lunch__list,
-.dinner__list {
+.dinner__list,
+.drinks__list {
   display: flex;
   flex-direction: column;
   gap: var(--space-400)
 }
 
 .lunch__list:not(:last-child),
-.dinner__list:not(:last-child) {
+.dinner__list:not(:last-child),
+.drinks__list:not(:last-child) {
   margin-block-end: var(--space-1100);
 }
 
 .lunch__item-name,
-.dinner__item-name {
+.dinner__item-name,
+.drinks__item-name {
   text-transform: uppercase;
   font-weight: var(--fw-bold);
 }
 
 .lunch__item-description,
-.dinner__item-description {
+.dinner__item-description,
+.drinks__item-description {
   font-size: var(--fs-200);
 }
 
