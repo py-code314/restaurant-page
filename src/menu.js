@@ -66,7 +66,7 @@ const showMenu = () => {
 
           </div>
 
-          <div class="lunch__categories-right>
+          <div class="lunch__categories-right">
 
             <h4 class="lunch__subtitle">Entrées</h4>
             <ul class="lunch__list lunch__entrées">

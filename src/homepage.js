@@ -88,7 +88,7 @@ const loadHomepage = () => {
         
         <li class="footer__list-item">
           <img class="footer__list-image" src="${subscribeImg}" alt="" width="25" height="25">
-          <a class="footer__link" href="#" onclick="event.preventDefault()">Subscribe</a>
+          <a class="footer__link footer__link--upper" href="#" onclick="event.preventDefault()">Subscribe</a>
         </li>
       </ul>
     </div>

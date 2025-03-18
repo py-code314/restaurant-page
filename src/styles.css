@@ -1,22 +1,23 @@
-
 :root {
-  
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(0, 0%, 0%);
   --clr-lime-green: hsl(74, 54%, 54%);
   --clr-dark-green: hsl(179, 98%, 18%);
   --clr-dark-red: hsl(0, 100%, 27%);
+  --clr-salmon: hsl(6, 93%, 71%);
 
-  --ff-open-sans: "Open Sans", sans-serif;
-  --ff-bubblegum-sans: "Bubblegum Sans", sans-serif;
+  --ff-open-sans: 'Open Sans', sans-serif;
+  --ff-bubblegum-sans: 'Bubblegum Sans', sans-serif;
 
   --radius-1: 5px;
   --radius-2: 30px;
-  --shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+  --shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.6);
 
   --space-40: 0.25rem;
   --space-80: 0.5rem;
+  --space-200: 0.75rem;
   --space-400: 1rem;
+  --space-600: 1.25rem;
   --space-700: 1.5rem;
   --space-1100: 2.5rem;
 
@@ -26,14 +27,14 @@
   --fw-medium: 500;
   --fw-bold: 700;
 
-  --fs-60: 1.25rem;
+  --fs-200: 0.75rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.5rem;
   --fs-750: 1.625rem;
+  --fs-800: 1.75rem;
   --fs-850: 1.875rem;
   --fs-1100: 2.5rem;
 }
-
-
-
 
 /* ===================
    JOSH COMEAU'S RESET 
@@ -94,7 +95,10 @@ h6 {
   isolation: isolate;
 }
 
-
+/* Remove markers */
+ul {
+  list-style-type: none;
+}
 
 body {
   font-family: var(--ff-open-sans);
@@ -102,14 +106,14 @@ body {
   flex-direction: column;
 }
 
-
 .header {
   display: flex;
   flex-direction: column;
 
   justify-content: space-between;
-  background: url('./images/black-and-white.jpeg') no-repeat center center / cover;
-  
+  background: url('./images/black-and-white.jpeg') no-repeat center center /
+    cover;
+
   height: 500px;
   /* text-align: center; */
   padding: var(--space-700) var(--space-1100);
@@ -122,7 +126,6 @@ body {
 }
 
 .header__title {
-  
   font-family: var(--ff-bubblegum-sans);
   font-size: var(--fs-1100);
   /* padding-block: var(--space-400); */
@@ -189,14 +192,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--space-400)
+  gap: var(--space-400);
 }
 
 .intro__title,
 .menu__title {
   font-size: var(--fs-850);
   text-transform: uppercase;
-  
 }
 
 .btn--reserve {
@@ -234,28 +236,24 @@ body {
 }
 
 .feature--restaurant {
-  background: url(./images/image-restaurant.jpeg) no-repeat center center / cover;
-  
+  background: url(./images/image-restaurant.jpeg) no-repeat center center /
+    cover;
 }
 .feature--menu {
   background: url(./images/image-menu.jpeg) no-repeat center center / cover;
-
 }
 .feature--bar {
   background: url(./images/image-bar.jpeg) no-repeat center center / cover;
-  
 }
 .feature--chef {
   background: url(./images/image-chef.jpeg) no-repeat center center / cover;
-  
 }
 .feature--chocolates {
-  background: url(./images/image-chocolates.jpeg) no-repeat center center / cover;
-  
+  background: url(./images/image-chocolates.jpeg) no-repeat center center /
+    cover;
 }
 .feature--events {
   background: url(./images/image-events.jpeg) no-repeat center center / cover;
-  
 }
 
 .feature__name {
@@ -276,7 +274,7 @@ body {
 }
 
 .footer__list {
-  list-style: none;
+  /* list-style: none; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,7 +284,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: var(--space-40)
+  gap: var(--space-40);
 }
 
 .footer__link {
@@ -297,7 +295,7 @@ body {
   text-decoration: none;
 }
 
-.footer__link--subscribe {
+.footer__link--upper {
   text-transform: uppercase;
 }
 
@@ -314,13 +312,53 @@ body {
   align-items: center;
 }
 
+.lunch__title {
+  font-size: var(--fs-750);
+  text-transform: uppercase;
+  background-color: var(--clr-salmon);
+  padding: var(--space-80) var(--space-600);
+}
+
 .lunch__categories {
   display: flex;
-  gap: var(--space-400)
+  padding: var(--space-700);
+}
+
+.lunch__categories-left,
+.lunch__categories-right {
+  padding: var(--space-700);
 }
 
 .lunch__categories-left {
   display: flex;
   flex-direction: column;
   align-items: end;
+  border-inline-end: 2px solid var(--clr-salmon);
+}
+
+.lunch__subtitle {
+  font-size: var(--fs-700);
+}
+
+.lunch__categories-left .lunch__list {
+  text-align: right;
+}
+
+.lunch__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400)
+}
+
+.lunch__list:not(:last-child) {
+  margin-block-end: var(--space-1100);
+}
+
+.lunch__item-name {
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+}
+
+.lunch__item-description {
+  font-size: var(--fs-200);
 }
