@@ -98,7 +98,7 @@ const loadHomepage = () => {
   document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       statement.classList.add('slide');
-    }, 1000);
+    }, 500);
   });
 };
 
