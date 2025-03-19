@@ -22,13 +22,13 @@ function showDinnerMenu() {
 
             <li class="dinner__item">
               <p class="dinner__item-name">Carottes Râpées</p>
-              <p class="dinner__item-description">ginger, crispy quinoa</p>
+              <p class="dinner__item-description">Ginger, Crispy Quinoa</p>
               <p class="dinner__item-price">12</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Croquette</p>
-              <p class="dinner__item-description">crispy rice with french ham, gruyère cheese, and herb aioli</p>
+              <p class="dinner__item-description">crispy rice with French ham, Gruyère cheese, and herb aioli</p>
               <p class="dinner__item-price">12</p>
             </li>
           </ul>
@@ -56,12 +56,12 @@ function showDinnerMenu() {
           <ul class="dinner__list">
             <li class="dinner__item">
               <p class="dinner__item-name">Pâté de Campagne</p>
-              <p class="dinner__item-description">heritage pork, sicilian pistachios, agen prunes</p>
+              <p class="dinner__item-description">Heritage pork, Sicilian pistachios, Agen prunes</p>
               <p class="dinner__item-price">31</p>
             </li>
 
             <li class="dinner__item">
-              <p class="dinner__item-name">Frisée Aux Lardons</p>
+              <p class="dinner__item-name">Frisée aux Lardons</p>
               <p class="dinner__item-description">chicory salad, bacon shallot vinaigrette and a soft-poached egg</p>
               <p class="dinner__item-price">27</p>
             </li>
@@ -91,13 +91,13 @@ function showDinnerMenu() {
           <ul class="dinner__list">
             <li class="dinner__item">
               <p class="dinner__item-name">Cassoulet</p>
-              <p class="dinner__item-description">duck confit, lamb rib, tarbais beans, saucisse de canard</p>
+              <p class="dinner__item-description">duck confit, lamb rib, Tarbais beans, saucisse de canard</p>
               <p class="dinner__item-price">54</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Onglet Au Poivre</p>
-              <p class="dinner__item-description">hanger steak, sarawak peppercorn, pommes frites</p>
+              <p class="dinner__item-description">hanger steak, Sarawak peppercorn, pommes frites</p>
               <p class="dinner__item-price">58</p>
             </li>
 
@@ -109,19 +109,19 @@ function showDinnerMenu() {
 
             <li class="dinner__item">
               <p class="dinner__item-name">Black Sea Bass</p>
-              <p class="dinner__item-description">farro verde, champignon de paris, pine nuts</p>
+              <p class="dinner__item-description">farro verde, champignon de Paris, toutes les herbes</p>
               <p class="dinner__item-price">30</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Honeynut Risotto</p>
-              <p class="dinner__item-description">butternut and kabocha purêe, fried brussels sprouts, and toasted pumpkin seeds</p>
+              <p class="dinner__item-description">butternut and Kabocha purée, fried brussels sprouts, and toasted pumpkin seeds</p>
               <p class="dinner__item-price">32</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Chicken Paillard</p>
-              <p class="dinner__item-description">frisêe, tomato confit, and shaved parmesan</p>
+              <p class="dinner__item-description">frisée, tomato confit, and shaved Parmesan</p>
               <p class="dinner__item-price">35</p>
             </li>
           </ul>
@@ -151,25 +151,25 @@ function showDinnerMenu() {
           <ul class="dinner__list">
             <li class="dinner__item">
               <p class="dinner__item-name">Grand Mariner Soufflé</p>
-              <p class="dinner__item-description">vanilla crème fraîche anglaise</p>
+              <p class="dinner__item-description">Vanilla Crème Fraîche Anglaise</p>
               <p class="dinner__item-price">18</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Île Flottante</p>
-              <p class="dinner__item-description">hazelnut, toasted vanilla anglaise</p>
+              <p class="dinner__item-description">Hazelnut, toasted vanilla anglaise</p>
               <p class="dinner__item-price">18</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Mille Feuille au Chocolat</p>
-              <p class="dinner__item-description">guanaja cream, salted caramel</p>
+              <p class="dinner__item-description">Guanaja cream, salted caramel</p>
               <p class="dinner__item-price">18</p>
             </li>
 
             <li class="dinner__item">
               <p class="dinner__item-name">Profiterole</p>
-              <p class="dinner__item-description">buckwheat honey fudge</p>
+              <p class="dinner__item-description">Buckwheat Honey Fudge</p>
               <p class="dinner__item-price">16</p>
             </li>
           </ul>

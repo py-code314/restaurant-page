@@ -10,13 +10,13 @@ function showLunchMenu() {
           <ul class="lunch__list">
             <li class="lunch__item">
               <p class="lunch__item-name">Baguette Service</p>
-              <p class="lunch__item-description">radish, butter, cervelle</p>
+              <p class="lunch__item-description">Radish, Butter, Cervelle</p>
               <p class="lunch__item-price">18</p>
             </li>
 
             <li class="lunch__item">
               <p class="lunch__item-name">Falafel</p>
-              <p class="lunch__item-description">cucumber yogurt</p>
+              <p class="lunch__item-description">Cucumber Yogurt</p>
               <p class="lunch__item-price">26</p>
             </li>
 
@@ -66,7 +66,7 @@ function showLunchMenu() {
 
             <li class="lunch__item">
               <p class="lunch__item-name">Chestnut Ravioli</p>
-              <p class="lunch__item-description">lacinato kale, bacon, mushrooms, and chestnut-butter sauce</p>
+              <p class="lunch__item-description">Lacinato kale, bacon, mushrooms, and chestnut-butter sauce</p>
               <p class="lunch__item-price">34</p>
             </li>
 
@@ -78,13 +78,13 @@ function showLunchMenu() {
 
             <li class="lunch__item">
               <p class="lunch__item-name">Duck Bolognese</p>
-              <p class="lunch__item-description">pasta shells, whipped créme fraîche</p>
+              <p class="lunch__item-description">Pasta Shells, Whipped Crème Fraîche</p>
               <p class="lunch__item-price">28</p>
             </li>
 
             <li class="lunch__item">
               <p class="lunch__item-name">Escargots</p>
-              <p class="lunch__item-description">garlic butter, pancetta, croutons</p>
+              <p class="lunch__item-description">Garlic Butter, Pancetta, Croutons</p>
               <p class="lunch__item-price">26</p>
             </li>
           </ul>
@@ -114,19 +114,19 @@ function showLunchMenu() {
           <ul class="lunch__list">
             <li class="lunch__item">
               <p class="lunch__item-name">Coconut Gateau</p>
-              <p class="lunch__item-description">pineapple, coconut</p>
+              <p class="lunch__item-description">Pineapple, Coconut</p>
               <p class="lunch__item-price">18</p>
             </li>
 
             <li class="lunch__item">
               <p class="lunch__item-name">Tarte Tatin</p>
-              <p class="lunch__item-description">caramelized apples, buttermilk glacé</p>
+              <p class="lunch__item-description">Caramelized Apples, Buttermilk Glacé</p>
               <p class="lunch__item-price">18</p>
             </li>
 
             <li class="lunch__item">
               <p class="lunch__item-name">Las Coupes Glacées</p>
-              <p class="lunch__item-description">ice creams and sorbets</p>
+              <p class="lunch__item-description">Ice Creams and Sorbets</p>
               <p class="lunch__item-price">14</p>
             </li>
           </ul>

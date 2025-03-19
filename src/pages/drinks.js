@@ -3,10 +3,10 @@ function showDrinksMenu() {
 
   const drinksHTML = `
     <div class="drinks">
-      <h3 class="drinks__title">Drinks</h3>
+      
       <div class="drinks__categories">
         <div class="drinks__categories-left">
-          <h4 class="drinks__subtitle">Pétillants</h4>
+          <h3 class="drinks__subtitle">Pétillants</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Mario</p>
@@ -21,7 +21,7 @@ function showDrinksMenu() {
             </li>
           </ul>
 
-          <h4 class="drinks__subtitle">Blancs</h4>
+          <h3 class="drinks__subtitle">Blancs</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Laurent Saillard</p>
@@ -42,7 +42,7 @@ function showDrinksMenu() {
             </li>
           </ul>
 
-          <h4 class="drinks__subtitle">Rosés</h4>
+          <h3 class="drinks__subtitle">Rosés</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Antonio Margues de Cruz</p>
@@ -63,7 +63,7 @@ function showDrinksMenu() {
             </li>
           </ul>
 
-          <h4 class="drinks__subtitle">Rogues</h4>
+          <h3 class="drinks__subtitle">Rogues</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Nadine et Gérard Marula</p>
@@ -86,7 +86,7 @@ function showDrinksMenu() {
         </div>
 
         <div class="drinks__categories-right">
-          <h4 class="drinks__subtitle">Bières</h4>
+          <h3 class="drinks__subtitle">Bières</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Brasserie de la Pigeonnelle</p>
@@ -119,7 +119,7 @@ function showDrinksMenu() {
             </li>
           </ul>
 
-          <h4 class="drinks__subtitle">Champagne</h4>
+          <h3 class="drinks__subtitle">Champagne</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Émilien Feneuil</p>
@@ -158,7 +158,7 @@ function showDrinksMenu() {
             </li>             
           </ul>
 
-          <h4 class="drinks__subtitle">Cocktails</h4>
+          <h3 class="drinks__subtitle">Cocktails</h3>
           <ul class="drinks__list">
             <li class="drinks__item">
               <p class="drinks__item-name">Archdruid</p>

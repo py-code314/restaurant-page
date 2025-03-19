@@ -5,8 +5,10 @@
   --clr-dark-green: hsl(179, 98%, 18%);
   --clr-dark-red: hsl(0, 100%, 27%);
   --clr-salmon: hsl(6, 93%, 71%);
-  --clr-light-blue: rgb(124, 212, 242);
+  --clr-light-blue: hsl(194, 97%, 42%);
   --clr-dark-grey: hsl(0, 0%, 16%);
+  --clr-orange: hsl(24, 87%, 66%);
+  --clr-light-grey: hsl(0, 0%, 94%);
 
   --ff-cinzel: "Cinzel", serif;
   --ff-philosopher: "Philosopher", sans-serif;
@@ -121,7 +123,7 @@ body {
   flex-direction: column;
 
   justify-content: space-between;
-  background: url('../images/image-restaurant.jpeg') no-repeat center center /
+  background: url('../images/image-restaurant-2.jpeg') no-repeat center center /
     cover;
 
   height: 500px;
@@ -138,6 +140,7 @@ body {
   font-family: var(--ff-aboreto);
   font-size: var(--fs-1100);
   text-transform: uppercase;
+  color: var(--clr-white)
 }
 
 .nav__list {
@@ -192,6 +195,7 @@ body {
 
 #content {
   padding: var(--space-1100);
+  background-color: var(--clr-light-grey);
 }
 
 .intro,
@@ -270,10 +274,11 @@ body {
   text-transform: uppercase;
   color: var(--clr-white);
   font-family: var(--ff-aboreto);
+  font-weight: var(--fw-bold);
 }
 
 .feature__name:hover {
-  color: var(--clr-lime-green);
+  color: var(--clr-light-blue);
 }
 
 .footer__links {
@@ -301,7 +306,7 @@ body {
 .footer__link {
   color: var(--clr-black);
   font-weight: var(--fw-bold);
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   cursor: pointer;
   text-decoration: none;
 }
@@ -316,18 +321,20 @@ body {
   background-color: var(--clr-black);
 }
 
-.menu,
-.lunch,
-.dinner,
-.drinks {
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--space-400);
 }
+
+/* .menu {
+  background-color: #D5DBDB;
+} */
 
 .menu__title {
   font-size: var(--fs-1000);
-  font-family: var(--ff-cinzel);
+  font-family: var(--ff-aboreto);
 }
 
 .menu__list {
@@ -488,6 +495,11 @@ body {
   flex-direction: column;
   gap: var(--space-700);
   width: 100%;
+}
+
+.contact {
+  padding: var(--space-600);
+  background-color: var(--clr-orange);
 }
 
 .contact__container {
