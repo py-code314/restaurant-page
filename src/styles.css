@@ -6,6 +6,7 @@
   --clr-dark-red: hsl(0, 100%, 27%);
   --clr-salmon: hsl(6, 93%, 71%);
   --clr-light-blue: rgb(124, 212, 242);
+  --clr-dark-grey: hsl(0, 0%, 16%);
 
   --ff-cinzel: "Cinzel", serif;
   --ff-philosopher: "Philosopher", sans-serif;
@@ -139,7 +140,7 @@ body {
   text-transform: uppercase;
 }
 
-.nav {
+.nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,6 +328,38 @@ body {
 .menu__title {
   font-size: var(--fs-1000);
   font-family: var(--ff-cinzel);
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;  
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu__btn {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-bold);
+  /* text-transform: uppercase; */
+  /* background-color: var(--clr-salmon); */
+  padding: var(--space-80) var(--space-600);
+  font-family: var(--ff-cinzel);
+  cursor: pointer;
+}
+
+.menu__btn--lunch {
+  background-color: var(--clr-salmon);
+}
+.menu__btn--dinner {
+  background-color: var(--clr-lime-green);
+}
+.menu__btn--drinks {
+  background-color: var(--clr-light-blue);
+}
+
+.menu__btn[aria-selected='true'] {
+  background-color: var(--clr-dark-grey);
+  color: var(--clr-white)
 }
 
 .lunch__title,
