@@ -1,20 +1,22 @@
-import "./styles.css"
-import homepage from './homepage.js'
-import about from './about.js'
-import menu from './menu.js'
+import './assets/styles/styles.css';
 
+import footer from './components/footer.js'
+import homepage from './pages/homepage.js';
+import about from './pages/about.js';
+import menu from './pages/menu.js';
 
 const tabs = document.querySelector('.nav');
-const tabButtons = tabs.querySelectorAll('[role="tab"]')
+const tabButtons = tabs.querySelectorAll('[role="tab"]');
 // console.log(tabButtons);
 
 const content = document.querySelector('#content');
-const tabPanels = content.querySelectorAll('[role="tabpanel"]')
+
+const tabPanels = content.querySelectorAll('[role="tabpanel"]');
 // console.log(tabPanels);
 
 function handleTabClick(event) {
   // Clear page
-  content.innerHTML = ''
+  content.innerHTML = '';
 
   // Unselect all buttons
   tabButtons.forEach((button) => button.setAttribute('aria-selected', false));
@@ -27,17 +29,19 @@ function handleTabClick(event) {
 
   if (id === 'home') {
     homepage();
+    
   } else if (id === 'menu') {
     menu();
+    
   } else {
     about();
   }
 }
-  
 
-tabButtons.forEach(button => button.addEventListener('click', handleTabClick))
-
-
+tabButtons.forEach((button) =>
+  button.addEventListener('click', handleTabClick)
+);
 
 // Initial render
-homepage()
+homepage();
+footer()
