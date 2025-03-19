@@ -29,70 +29,72 @@ const aboutUs = () => {
       <div class="contact">
         <h2 class="contact__title">Contact Us</h2>
 
-        <div class="details">
-          <h3 class="details__title">Hours & Location</h3>
-          <div class="location">
-            <p>17 Rue de l'Université,</p>
-            <p>75007 Paris</p>
-            <p>+33 1 42 61 92 01</p>
+        <div class="contact__container">
+          <div class="details">
+            <h3 class="details__title">Hours & Location</h3>
+            <div class="location">
+              <p>17 Rue de l'Université,</p>
+              <p>75007 Paris</p>
+              <p>+33 1 42 61 92 01</p>
+            </div>
+
+            <div class="hours">
+              <p>Monday - Friday</p>
+              <p>11:00AM - 9:00PM</p>
+              <p>Saturday</p>
+              <p>4:00pM - 10:00PM</p>
+              <p>Closed Sunday</p>
+            </div>
           </div>
 
-          <div class="hours">
-            <p>Monday - Friday</p>
-            <p>11:00AM - 9:00PM</p>
-            <p>Saturday</p>
-            <p>4:00pM - 10:00PM</p>
-            <p>Closed Sunday</p>
+          <div class="navigation">
+            <h3 class="navigation__title">Navigate</h3>
+            <ul class="navigation__list>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">Home</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">Menu</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">About</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">Contact</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">Book Now</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">Events</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__link" href="#" onclick="event.preventDefault()">Interior</a>
+              </li>
+            </ul>
           </div>
-        </div>
 
-        <div class="navigation">
-          <h3 class="navigation__title">Navigate</h3>
-          <ul class="navigation__list>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">Home</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">Menu</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">About</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">Contact</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">Book Now</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">Events</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#" onclick="event.preventDefault()">Interior</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="follow">
-          <h3 class="follow__title">Follow Us</h3>
-          <ul class="follow__list>
-            <li class="follow__list-item">
-              <img src="${facebookImg}" alt="" width="25" height="25">
-              <a href="#" onclick="event.preventDefault()">Facebook</a>
-            </li>
-            <li class="follow__list-item">
-              <img src="${instagramImg}" alt="" width="25" height="25">
-              <a href="#" onclick="event.preventDefault()">Instagram</a>
-            </li>
-            <li class="follow__list-item">
-              <img src="${linkedinImg}" alt="" width="25" height="25">
-              <a href="#" onclick="event.preventDefault()">Linkedin</a>
-            </li>
-            <li class="follow__list-item">
-              <img src="${twitterImg}" alt="" width="25" height="25">
-              <a href="#" onclick="event.preventDefault()">Twitter</a>
-            </li>
-          </ul>
+          <div class="follow">
+            <h3 class="follow__title">Follow Us</h3>
+            <ul class="follow__list">
+              <li class="follow__list-item">
+                <img src="${facebookImg}" alt="" width="20" height="20">
+                <a class="follow__link" href="#" onclick="event.preventDefault()">Facebook</a>
+              </li>
+              <li class="follow__list-item">
+                <img src="${instagramImg}" alt="" width="20" height="20">
+                <a class="follow__link" href="#" onclick="event.preventDefault()">Instagram</a>
+              </li>
+              <li class="follow__list-item">
+                <img src="${linkedinImg}" alt="" width="20" height="20">
+                <a class="follow__link" href="#" onclick="event.preventDefault()">Linkedin</a>
+              </li>
+              <li class="follow__list-item">
+                <img src="${twitterImg}" alt="" width="20" height="20">
+                <a class="follow__link" href="#" onclick="event.preventDefault()">Twitter</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       <div>
