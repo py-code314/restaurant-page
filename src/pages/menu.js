@@ -7,18 +7,18 @@ const content = document.querySelector('#content');
 const showMenu = () => {
   const menuHTML = `
     <div id="menu-container" class="tabpanel menu" role="tabpanel" aria-labelledby="menu">
-      <h2 class="menu__title">Menu</h2>
+      <h2 class="menu__title section-heading">Menu</h2>
 
       <ul class="menu__list" role="tablist" aria-label="Menu options">
         <li class="menu__list-item">
-          <button class="menu__btn menu__btn--lunch" role="tab" id="lunch"
+          <button class="btn btn--large menu__btn menu__btn--lunch" role="tab" id="lunch"
           aria-selected="true">
             Lunch
           </button>
         </li>
         <li class="menu__list-item">
           <button
-            class="menu__btn menu__btn--dinner"
+            class="btn btn--large menu__btn menu__btn--dinner"
             role="tab"           
             id="dinner"
             aria-selected="false">
@@ -27,7 +27,7 @@ const showMenu = () => {
         </li>
         <li class="menu__list-item">
           <button
-            class="menu__btn menu__btn--drinks"
+            class="btn btn--large menu__btn menu__btn--drinks"
             role="tab"           
             id="drinks"
             aria-selected="false">
@@ -46,7 +46,6 @@ const showMenu = () => {
 
   const menuTabs = document.querySelector('#menu-container');
   const menuButtons = menuTabs.querySelectorAll('[role="tab"]');
-  console.log(menuButtons);
   const menuContent = document.querySelector('#menu-content');
 
   function handleTabClick(event) {
@@ -77,9 +76,5 @@ const showMenu = () => {
     button.addEventListener('click', handleTabClick)
   );
 };
-
-
-
-
 
 export default showMenu;

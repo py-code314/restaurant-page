@@ -1,44 +1,38 @@
 import './assets/styles/styles.css';
-
 import footer from './components/footer.js'
 import homepage from './pages/homepage.js';
-import about from './pages/about.js';
 import menu from './pages/menu.js';
+import about from './pages/about.js';
 
-const tabs = document.querySelector('.nav');
-const tabButtons = tabs.querySelectorAll('[role="tab"]');
-// console.log(tabButtons);
 
+const navTabs = document.querySelector('.nav');
+const navButtons = navTabs.querySelectorAll('[role="tab"]');
 const content = document.querySelector('#content');
 
-const tabPanels = content.querySelectorAll('[role="tabpanel"]');
-// console.log(tabPanels);
 
 function handleTabClick(event) {
   // Clear page
   content.innerHTML = '';
 
   // Unselect all buttons
-  tabButtons.forEach((button) => button.setAttribute('aria-selected', false));
+  navButtons.forEach((button) => button.setAttribute('aria-selected', false));
 
-  // Select current tab
+  // Select current button
   event.currentTarget.setAttribute('aria-selected', true);
 
   // Show associated tab panel based on button id
   const id = event.currentTarget.id;
 
   if (id === 'home') {
-    homepage();
-    
+    homepage();  
   } else if (id === 'menu') {
-    menu();
-    
+    menu();   
   } else {
     about();
   }
 }
 
-tabButtons.forEach((button) =>
+navButtons.forEach((button) =>
   button.addEventListener('click', handleTabClick)
 );
 
