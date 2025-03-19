@@ -378,6 +378,7 @@ const showMenu = () => {
                 <p class="drinks__item-description">"Le Coeur" Garnaude 2023</p>
                 <p class="drinks__item-price">22</p>
               </li>
+            </ul>
 
             <h4 class="drinks__subtitle">Rogues</h4>
             <ul class="drinks__list">
