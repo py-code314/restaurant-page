@@ -1,4 +1,9 @@
+/* ===================
+   CSS VARIABLES
+   =================== */
+
 :root {
+  /* Colors */
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(0, 0%, 0%);
   --clr-lime-green: hsl(74, 54%, 54%);
@@ -10,13 +15,14 @@
   --clr-orange: hsl(24, 96%, 71%);
   --clr-light-grey: hsl(0, 0%, 94%);
 
-
+  /* Font family */
   --ff-cinzel: 'Cinzel', serif;
   --ff-philosopher: 'Philosopher', sans-serif;
   --ff-mulish: 'Mulish', sans-serif;
   --ff-aboreto: 'Aboreto', system-ui;
   --ff-gotu: 'Gotu', sans-serif;
 
+  /* Font sizes */
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
@@ -31,9 +37,11 @@
   --fs-1000: 2.25rem;
   --fs-1100: 2.5rem;
 
+  /* Font weights */
   --fw-medium: 500;
   --fw-bold: 700;
 
+  /* Spacing */
   --space-40: 0.25rem;
   --space-80: 0.5rem;
   --space-200: 0.75rem;
@@ -42,10 +50,12 @@
   --space-700: 1.5rem;
   --space-1100: 2.5rem;
 
+  /* Width & Height */
   --height-img: 21.875rem;
   --width-img: 16rem;
   --height-header: 31.25rem;
 
+  /* Utilities */
   --radius-1: 5px;
   --radius-2: 30px;
   --shadow: 0 0 18px 4px rgba(0, 0, 0, 0.6);
@@ -110,19 +120,12 @@ h6 {
   isolation: isolate;
 }
 
-/* Remove markers */
+/* Remove markers from lists */
 ul {
   list-style-type: none;
 }
 
-
-body {
-  font-family: var(--ff-gotu);
-  font-size: var(--fs-450);
-  display: flex;
-  flex-direction: column;
-}
-
+/* Utility classes */
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -146,6 +149,15 @@ body {
   align-items: end;
 }
 
+/* Styles for Body */
+body {
+  font-family: var(--ff-gotu);
+  font-size: var(--fs-450);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add background image to Header */
 .header {
   justify-content: space-between;
   background: url('../images/image-restaurant-2.jpeg') no-repeat center center /
@@ -170,6 +182,7 @@ body {
   gap: var(--space-400);
 }
 
+/* Button styles */
 .btn {
   font-weight: var(--fw-bold);
   cursor: pointer;
@@ -178,16 +191,17 @@ body {
 .btn--small {
   border: transparent;
   border-radius: var(--radius-1);
-  padding: var(--space-40) var(--space-80);  
+  padding: var(--space-40) var(--space-80);
   font-size: var(--fs-500);
   box-shadow: var(--shadow);
-  
 }
 
+/* Add styles for selected button */
 .btn--small[aria-selected='true'] {
   background-color: var(--clr-lime-green);
 }
 
+/* Add animation to Statement text */
 .statement {
   width: 60%;
   color: var(--clr-white);
@@ -195,6 +209,10 @@ body {
   position: relative;
   top: -150px;
   transition: top 0.5s ease-in;
+}
+
+.statement.slide {
+  top: 0;
 }
 
 .statement__title {
@@ -206,10 +224,9 @@ body {
   font-weight: var(--fw-medium);
 }
 
-.statement.slide {
-  top: 0;
-}
 
+
+/* Main content takes up remaining height between header and footer */
 .main {
   flex: 1;
 }
@@ -219,12 +236,15 @@ body {
   background-color: var(--clr-light-grey);
 }
 
+/* Section styles */
 .home,
 .menu,
 .about-us {
   gap: var(--space-1100);
 }
 
+
+/* Center content of each subsection */
 .intro,
 .story,
 .about,
@@ -235,14 +255,12 @@ body {
   gap: var(--space-700);
 }
 
-
-
 .section-heading {
   font-size: var(--fs-1000);
   font-family: var(--ff-aboreto);
 }
 
-
+/* Apply rounded border to Reserve button */
 .btn--rounded {
   border: transparent;
   border-radius: var(--radius-2);
@@ -251,12 +269,12 @@ body {
   color: var(--clr-white);
 }
 
+/* Homepage gallery styles */
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-1100);
-  /* padding: var(--space-1100) 0; */
 }
 
 .feature {
@@ -268,6 +286,7 @@ body {
   align-items: end;
 }
 
+/* Add different background images to each feature */
 .feature--restaurant {
   background: url(../images/image-restaurant-1.jpeg) no-repeat center center /
     cover;
@@ -299,6 +318,7 @@ body {
   color: var(--clr-light-blue);
 }
 
+/* Footer styles */
 .footer__links {
   padding: var(--space-80) var(--space-1100);
   background-color: var(--clr-lime-green);
@@ -316,6 +336,7 @@ body {
   gap: var(--space-40);
 }
 
+/* Remove underline from footer links */
 .footer__link {
   color: var(--clr-black);
   font-weight: var(--fw-bold);
@@ -328,14 +349,14 @@ body {
   text-transform: uppercase;
 }
 
+/* Add vertical line between footer links */
 .vertical-line {
   width: 1px;
   height: 20px;
   background-color: var(--clr-black);
 }
 
-
-
+/* Menu page styles */
 .menu__list {
   width: 100%;
   display: flex;
@@ -343,12 +364,14 @@ body {
   align-items: center;
 }
 
+/* Menu button styles */
 .btn--large {
   font-size: var(--fs-900);
   padding: var(--space-80) var(--space-600);
   font-family: var(--ff-cinzel);
 }
 
+/* Add different background colors to each menu button */
 .btn--salmon {
   background-color: var(--clr-salmon);
 }
@@ -359,11 +382,13 @@ body {
   background-color: var(--clr-light-blue);
 }
 
+/* Style selected menu button differently */
 .menu__btn[aria-selected='true'] {
   background-color: var(--clr-dark-grey);
   color: var(--clr-white);
 }
 
+/* Place categories side by side */
 .categories {
   display: flex;
   padding: var(--space-700);
@@ -374,6 +399,7 @@ body {
   flex: 1;
 }
 
+/* Create vertical border for each category */
 .border-salmon {
   border-inline-end: 4px solid var(--clr-salmon);
 }
@@ -392,15 +418,14 @@ body {
   text-transform: uppercase;
 }
 
+/* Align text in left category close to the right border */
 .category-left .items-list {
   text-align: right;
 }
 
-
 .items-list {
   gap: var(--space-400);
 }
-
 
 .items-list:not(:last-child) {
   margin-block-end: var(--space-1100);
@@ -418,7 +443,6 @@ body {
   font-family: var(--ff-mulish);
 }
 
-
 .days {
   text-transform: uppercase;
   font-style: italic;
@@ -426,7 +450,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-
+/* Increase the width of the contact section */
 .contact {
   padding: var(--space-600);
   background-color: var(--clr-orange);
@@ -438,7 +462,6 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
 
 .group {
   gap: var(--space-400);
@@ -458,14 +481,13 @@ body {
   gap: var(--space-80);
 }
 
+/* Remove underline from contact links */
 .no-underline {
   color: var(--clr-black);
   cursor: pointer;
   text-decoration: none;
 }
 
-.no-underline:hover {  
+.no-underline:hover {
   text-decoration: underline;
 }
-
-
