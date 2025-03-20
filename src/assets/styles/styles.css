@@ -450,15 +450,30 @@ body {
   letter-spacing: 1.5px;
 }
 
-/* Place image and text side by side */
+/* Limit the width for big screens */
 .story,
 .about {
+  max-width: 1000px;
+}
+
+/* Place image and text side by side */
+.story__line,
+.about__line {
   display: flex;
+  gap: var(--space-600);
+  text-align: justify;
+}
+
+.story__title {
+  text-align: right;
+}
+
+.about__title {
+  text-align: left;
 }
 
 .img-container {
   flex: 1;
-  display: flex;
 }
 
 /* Image fills up whole container */
@@ -477,7 +492,6 @@ body {
 /* Increase the width of the contact section */
 .contact {
   padding: var(--space-600);
-
   background-color: var(--clr-light-green);
   width: 100%;
 }
