@@ -1,6 +1,6 @@
+/* Function to render the drinks menu page */
 function showDrinksMenu() {
-  document.querySelector('#menu-content').innerHTML = '';
-
+  // Add content describing the drinks menu
   const drinksHTML = `
     <div class="drinks">
       

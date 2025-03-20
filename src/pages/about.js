@@ -1,11 +1,15 @@
+/* Import images */
 import facebookImg from '../assets/images/icon-facebook.svg'
 import instagramImg from '../assets/images/icon-instagram.svg'
 import linkedinImg from '../assets/images/icon-linkedin.svg'
 import twitterImg from '../assets/images/icon-twitter.svg'
 
+/* Get html elements */
 const content = document.querySelector('#content');
 
+/* Creates the "About Us" tab content */
 const aboutUs = () => {
+  // Add subsections for Our Story, About Our Restaurant, and Contact Us
   content.innerHTML += `
     <div class="tabpanel about-us flex-col-center" role="tabpanel" aria-labelledby="about">
 
@@ -96,14 +100,9 @@ const aboutUs = () => {
             </ul>
           </div>
         </div>
-
       <section>
-
-        
-
     </div>
   `;
-
 }
 
 export default aboutUs

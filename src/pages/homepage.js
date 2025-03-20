@@ -1,10 +1,12 @@
-
+/* Get html elements */
 const content = document.querySelector('#content');
 const statement = document.querySelector('.statement');
 
 
+/* Function to load the homepage content into the page */
 const loadHomepage = () => {
   // Add content describing the restaurant
+  // Add gallery
   content.innerHTML += `
     <div class="tabpanel home flex-col-center" role="tabpanel" aria-labelledby="home">
       <section class="intro flex-col-center">

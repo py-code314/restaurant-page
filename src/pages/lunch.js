@@ -1,5 +1,6 @@
+/* Function to render the lunch menu page */
 function showLunchMenu() {
-
+  // Add content describing the lunch menu
   const lunchHTML = `
     <div class="lunch">
       

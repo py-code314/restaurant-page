@@ -1,6 +1,6 @@
+/* Function to render the dinner menu page */
 function showDinnerMenu() {
-  document.querySelector('#menu-content').innerHTML = '';
-
+  // Add content describing the dinner menu
   const dinnerHTML = `
     <div class="dinner">
      

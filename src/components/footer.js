@@ -1,3 +1,4 @@
+/* Import images */
 import accessibilityImg from '../assets/images/icon-accessibility.svg';
 import privacyImg from '../assets/images/icon-privacy.svg';
 import giftCardImg from '../assets/images/icon-gift-card.svg';
@@ -5,10 +6,12 @@ import jobsImg from '../assets/images/icon-jobs.svg';
 import pressImg from '../assets/images/icon-newspaper.svg';
 import subscribeImg from '../assets/images/icon-subscribe.svg';
 
+/* Get html elements */
 const footer = document.querySelector('.footer');
 
+/* Creates footer with links */
 const createFooter = () => {
-  // Add footer
+  // Add footer content with links to other pages
   footer.innerHTML += `
     <div class="footer__links">
       <ul class="footer__list">

@@ -1,10 +1,14 @@
+/* Import pages */
 import lunch from './lunch.js';
 import dinner from './dinner.js'
 import drinks from './drinks.js'
 
+/* Get html elements */
 const content = document.querySelector('#content');
 
+/* Renders the menu page with tabbed navigation for Lunch, Dinner, and Drinks options */
 const showMenu = () => {
+  // Add buttons for Lunch, Dinner, and Drinks
   const menuHTML = `
     <div id="menu-container" class="tabpanel menu flex-col-center" role="tabpanel" aria-labelledby="menu">
       <h2 class="menu__title section-heading">Menu</h2>
@@ -44,10 +48,13 @@ const showMenu = () => {
   // Initial render
   lunch();
 
+  // Get html elements
   const menuTabs = document.querySelector('#menu-container');
   const menuButtons = menuTabs.querySelectorAll('[role="tab"]');
   const menuContent = document.querySelector('#menu-content');
 
+  /* Handles the click event for menu buttons and 
+   renders the associated tab panel based on button id */
   function handleTabClick(event) {
     // Clear content
     menuContent.innerHTML = '';
@@ -72,6 +79,7 @@ const showMenu = () => {
     }
   }
 
+  // Add event listeners
   menuButtons.forEach((button) =>
     button.addEventListener('click', handleTabClick)
   );
