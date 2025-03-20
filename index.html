@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@400..900&family=Gotu&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+  <script defer src="main.js"></script></head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header flex-col">
+
+      <!-- BANNER -->
+      <div class="banner">
+        <img
+          src="5fb7c8aad62a3814b978.svg"
+          alt=""
+          width="60"
+          height="60"
+          class="banner__logo" />
+        <h1 class="banner__title">Le Coeur de Paris</h1>
+
+        <!-- Navigation -->
+        <nav class="nav" role="tablist" aria-label="Browsing options">
+          <ul class="nav__list flex-center">
+            <li class="nav__item">
+              <button
+                class="btn btn--small"
+                role="tab"
+                aria-selected="true"
+                id="home">
+                Home
+              </button>
+            </li>
+            <li class="nav__item">
+              <button
+                class="btn btn--small"
+                role="tab"
+                aria-selected="false"
+                id="menu">
+                Menu
+              </button>
+            </li>
+            <li class="nav__item">
+              <button
+                class="btn btn--small"
+                role="tab"
+                aria-selected="false"
+                id="about">
+                About Us
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Statement -->
+      <div class="statement flex-col">
+        <h2 class="statement__title">
+          Bienvenue à la Cuisine Authentique Française
+        </h2>
+        <hr />
+        <p class="statement__text">
+          Experience the authentic taste of France with us. Our menu features
+          classic dishes like Coq au Vin and Crème Brûlée, crafted with fresh
+          ingredients and a passion for tradition. Let us take you on a culinary
+          journey through the heart of French cuisine.
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--Main Content-->
+      <div id="content"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer"></footer>
+  </body>
+</html>
