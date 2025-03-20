@@ -20,6 +20,7 @@
   --fs-200: 0.75rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
+  --fs-450: 1.0625rem;
   --fs-500: 1.125rem;
   --fs-600: 1.25rem;
   --fs-700: 1.5rem;
@@ -117,6 +118,7 @@ ul {
 
 body {
   font-family: var(--ff-gotu);
+  font-size: var(--fs-450);
   display: flex;
   flex-direction: column;
 }
@@ -462,7 +464,7 @@ body {
   text-decoration: none;
 }
 
-.footer-link:hover {  
+.no-underline:hover {  
   text-decoration: underline;
 }
 
