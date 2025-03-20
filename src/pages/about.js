@@ -4,7 +4,7 @@ import instagramImg from '../assets/images/icon-instagram.svg'
 import linkedinImg from '../assets/images/icon-linkedin.svg'
 import twitterImg from '../assets/images/icon-twitter.svg'
 import chefImg from '../assets/images/image-chef-1.jpeg'
-import diningImg from '../assets/images/image-dining-3.jpeg'
+import diningImg from '../assets/images/image-dining.jpeg'
 
 /* Get html elements */
 const content = document.querySelector('#content');
@@ -38,7 +38,7 @@ const aboutUs = () => {
           </p>
         </div>
         <div class="about__image-div img-container">
-          <img class="about__image img-full" src="${diningImg}" alt="Two people sitting at a restaurant dining table drinking wine">
+          <img class="about__image img-full" src="${diningImg}" alt="People dining at a restaurant">
         </div>
       </section>
 

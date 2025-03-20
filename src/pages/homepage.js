@@ -1,3 +1,4 @@
+
 /* Get html elements */
 const content = document.querySelector('#content');
 const statement = document.querySelector('.statement');
