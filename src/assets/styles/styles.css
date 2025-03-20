@@ -8,12 +8,14 @@
   --clr-black: hsl(0, 0%, 0%);
   --clr-lime-green: hsl(74, 54%, 54%);
   --clr-dark-green: hsl(179, 98%, 18%);
+  --clr-light-green: hsl(171, 36%, 71%);
   --clr-dark-red: hsl(0, 100%, 27%);
   --clr-salmon: hsl(6, 93%, 71%);
   --clr-light-blue: hsl(194, 97%, 42%);
   --clr-dark-grey: hsl(0, 0%, 16%);
   --clr-orange: hsl(24, 96%, 71%);
-  --clr-light-grey: hsl(0, 0%, 94%);
+  --clr-very-light-grey: hsl(0, 0%, 94%);
+  --clr-light-grey: hsl(0, 0%, 74%);
 
   /* Font family */
   --ff-cinzel: 'Cinzel', serif;
@@ -48,6 +50,7 @@
   --space-400: 1rem;
   --space-600: 1.25rem;
   --space-700: 1.5rem;
+  --space-900: 2rem;
   --space-1100: 2.5rem;
 
   /* Width & Height */
@@ -224,8 +227,6 @@ body {
   font-weight: var(--fw-medium);
 }
 
-
-
 /* Main content takes up remaining height between header and footer */
 .main {
   flex: 1;
@@ -233,7 +234,7 @@ body {
 
 #content {
   padding: var(--space-1100);
-  background-color: var(--clr-light-grey);
+  background-color: var(--clr-very-light-grey);
 }
 
 /* Section styles */
@@ -243,7 +244,6 @@ body {
   gap: var(--space-1100);
 }
 
-
 /* Center content of each subsection */
 .intro,
 .story,
@@ -252,7 +252,7 @@ body {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  gap: var(--space-700);
+  gap: var(--space-400);
 }
 
 .section-heading {
@@ -321,7 +321,7 @@ body {
 /* Footer styles */
 .footer__links {
   padding: var(--space-80) var(--space-1100);
-  background-color: var(--clr-lime-green);
+  background-color: var(--clr-light-grey);
 }
 
 .footer__list {
@@ -450,10 +450,34 @@ body {
   letter-spacing: 1.5px;
 }
 
+/* Place image and text side by side */
+.story,
+.about {
+  display: flex;
+}
+
+.img-container {
+  flex: 1;
+  display: flex;
+}
+
+/* Image fills up whole container */
+.img-full {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.story__content,
+.about__content {
+  flex: 3;
+  gap: var(--space-400);
+}
+
 /* Increase the width of the contact section */
 .contact {
   padding: var(--space-600);
-  background-color: var(--clr-orange);
+  background-color: var(--clr-light-green);
   width: 100%;
 }
 
