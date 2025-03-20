@@ -6,14 +6,14 @@ const statement = document.querySelector('.statement');
 const loadHomepage = () => {
   // Add content describing the restaurant
   content.innerHTML += `
-    <div class="tabpanel home" role="tabpanel" aria-labelledby="home">
-      <section class="intro">
+    <div class="tabpanel home flex-col-center" role="tabpanel" aria-labelledby="home">
+      <section class="intro flex-col-center">
         <h2 class="intro__title section-heading">Uncompromising Authenticity</h2>
         <p class="intro__para"><strong>Le Coeur de Paris</strong> opened in 7th arrondissement in the Spring of 1992. The bustling, romantic brasserie serves traditional French fare in the form of lunch and dinner every day, with brunch served on weekends.</p>
 
         <p class="intro__para">Le Coeur de Paris offers a wide selection of fresh seafood and shellfish, as well as bread and pastries that are baked fresh every day at our own bakery.</p>
 
-        <button class="btn btn--reserve">Book a table</button>
+        <button class="btn btn--rounded">Book a table</button>
       </section>
 
       <div class="features">

@@ -4,9 +4,9 @@ function showLunchMenu() {
     <div class="lunch">
       
       <div class="lunch__categories categories">
-        <div class="lunch__categories-left categories-left">
+        <div class="lunch__categories-left category-left category flex-col-end border-salmon">
           <h3 class="lunch__subtitle category-name">Amusés</h3>
-          <ul class="lunch__list items-list">
+          <ul class="lunch__list items-list flex-col">
             <li class="lunch__item">
               <p class="lunch__item-name item-name">Baguette Service</p>
               <p class="lunch__item-description item-description">Radish, Butter, Cervelle</p>
@@ -27,7 +27,7 @@ function showLunchMenu() {
           </ul>
 
           <h3 class="lunch__subtitle category-name">Hors D'œuvres</h3>
-          <ul class="lunch__list items-list">
+          <ul class="lunch__list items-list flex-col">
             <li class="lunch__item">
               <p class="lunch__item-name item-name">Soupe de Poisson</p>
               <p class="lunch__item-description item-description">fish soup, saffron aioli</p>
@@ -54,9 +54,9 @@ function showLunchMenu() {
           </ul>
         </div>
 
-        <div class="lunch__categories-right categories-right">
+        <div class="lunch__categories-right category-right category">
           <h3 class="lunch__subtitle category-name">Entrées</h3>
-          <ul class="lunch__list items-list">
+          <ul class="lunch__list items-list flex-col">
             <li class="lunch__item">
               <p class="lunch__item-name item-name">Poulet Rôti</p>
               <p class="lunch__item-description item-description">roast chicken, pommes purée</p>
@@ -89,7 +89,7 @@ function showLunchMenu() {
           </ul>
 
           <h3 class="lunch__subtitle category-name">Plat du Jour</h3>
-          <ul class="lunch__list items-list">
+          <ul class="lunch__list items-list flex-col">
             <li class="lunch__item">
               <p class="lunch__day days">Friday</p>
               <p class="lunch__item-name item-name">Bouillabaisse</p>
@@ -110,7 +110,7 @@ function showLunchMenu() {
           </ul>
 
           <h3 class="lunch__subtitle category-name">Desserts</h3>
-          <ul class="lunch__list items-list">
+          <ul class="lunch__list items-list flex-col">
             <li class="lunch__item">
               <p class="lunch__item-name item-name">Coconut Gateau</p>
               <p class="lunch__item-description item-description">Pineapple, Coconut</p>

@@ -6,28 +6,28 @@ const content = document.querySelector('#content');
 
 const showMenu = () => {
   const menuHTML = `
-    <div id="menu-container" class="tabpanel menu" role="tabpanel" aria-labelledby="menu">
+    <div id="menu-container" class="tabpanel menu flex-col-center" role="tabpanel" aria-labelledby="menu">
       <h2 class="menu__title section-heading">Menu</h2>
 
       <ul class="menu__list" role="tablist" aria-label="Menu options">
-        <li class="menu__list-item">
-          <button class="btn btn--large menu__btn menu__btn--lunch" role="tab" id="lunch"
+        <li class="menu__item">
+          <button class="btn btn--large btn--salmon menu__btn menu__btn--lunch" role="tab" id="lunch"
           aria-selected="true">
             Lunch
           </button>
         </li>
-        <li class="menu__list-item">
+        <li class="menu__item">
           <button
-            class="btn btn--large menu__btn menu__btn--dinner"
+            class="btn btn--large menu__btn btn--green menu__btn--dinner"
             role="tab"           
             id="dinner"
             aria-selected="false">
             Dinner
           </button>
         </li>
-        <li class="menu__list-item">
+        <li class="menu__item">
           <button
-            class="btn btn--large menu__btn menu__btn--drinks"
+            class="btn btn--large btn--blue menu__btn menu__btn--drinks"
             role="tab"           
             id="drinks"
             aria-selected="false">

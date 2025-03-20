@@ -121,9 +121,30 @@ body {
   flex-direction: column;
 }
 
-.header {
+.flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-col-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.header {
   justify-content: space-between;
   background: url('../images/image-restaurant-2.jpeg') no-repeat center center /
     cover;
@@ -137,16 +158,13 @@ body {
   align-items: center;
 }
 
-.header__title {
+.banner__title {
   font-family: var(--ff-aboreto);
   font-size: var(--fs-1100);
   color: var(--clr-white);
 }
 
 .nav__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: var(--space-400);
 }
 
@@ -171,8 +189,6 @@ body {
 .statement {
   width: 60%;
   color: var(--clr-white);
-  display: flex;
-  flex-direction: column;
   gap: var(--space-80);
   position: relative;
   top: -150px;
@@ -204,9 +220,6 @@ body {
 .home,
 .menu,
 .about-us {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: var(--space-1100);
 }
 
@@ -217,9 +230,6 @@ body {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: var(--space-700);
 }
 
@@ -231,7 +241,7 @@ body {
 }
 
 
-.btn--reserve {
+.btn--rounded {
   border: transparent;
   border-radius: var(--radius-2);
   padding: var(--space-400) var(--space-1100);
@@ -298,9 +308,8 @@ body {
   align-items: center;
 }
 
-.footer__list-item {
+.footer__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: var(--space-40);
 }
@@ -338,13 +347,13 @@ body {
   font-family: var(--ff-cinzel);
 }
 
-.menu__btn--lunch {
+.btn--salmon {
   background-color: var(--clr-salmon);
 }
-.menu__btn--dinner {
+.btn--green {
   background-color: var(--clr-lime-green);
 }
-.menu__btn--drinks {
+.btn--blue {
   background-color: var(--clr-light-blue);
 }
 
@@ -358,24 +367,20 @@ body {
   padding: var(--space-700);
 }
 
-.categories-left,
-.categories-right {
+.category {
   padding: var(--space-700);
   flex: 1;
 }
 
-.categories-left {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+.border-salmon {
   border-inline-end: 4px solid var(--clr-salmon);
 }
 
-.dinner__categories-left {
+.border-green {
   border-inline-end: 4px solid var(--clr-lime-green);
 }
 
-.drinks__categories-left {
+.border-blue {
   border-inline-end: 4px solid var(--clr-light-blue);
 }
 
@@ -385,14 +390,12 @@ body {
   text-transform: uppercase;
 }
 
-.categories-left .items-list {
+.category-left .items-list {
   text-align: right;
 }
 
 
 .items-list {
-  display: flex;
-  flex-direction: column;
   gap: var(--space-400);
 }
 
@@ -436,9 +439,6 @@ body {
 
 
 .group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: var(--space-400);
 }
 
@@ -448,21 +448,20 @@ body {
 }
 
 .follow__list {
-  display: flex;
-  flex-direction: column;
   gap: var(--space-80);
 }
 
-.follow__list-item {
+.follow__item {
   display: flex;
   gap: var(--space-80);
 }
 
-.footer-link{
+.no-underline {
   color: var(--clr-black);
   cursor: pointer;
   text-decoration: none;
 }
+
 .footer-link:hover {  
   text-decoration: underline;
 }

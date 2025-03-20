@@ -5,9 +5,9 @@ function showDinnerMenu() {
     <div class="dinner">
      
       <div class="dinner__categories categories">
-        <div class="dinner__categories-left categories-left">
+        <div class="dinner__categories-left category-left category flex-col-end border-green">
           <h3 class="dinner__subtitle category-name">Amusés</h3>
-          <ul class="dinner__list items-list">
+          <ul class="dinner__list items-list flex-col">
             <li class="dinner__item">
               <p class="dinner__item-name item-name">Tarte Tatin à L'échalote</p>
               <p class="dinner__item-description item-description">bone marrow</p>
@@ -34,7 +34,7 @@ function showDinnerMenu() {
           </ul>
 
           <h3 class="dinner__subtitle category-name">Garnitures</h3>
-          <ul class="dinner__list items-list">
+          <ul class="dinner__list items-list flex-col">
             <li class="dinner__item">
               <p class="dinner__item-name item-name">Pommes Frites</p>               
               <p class="dinner__item-price">16</p>
@@ -53,7 +53,7 @@ function showDinnerMenu() {
           </ul>
 
           <h3 class="dinner__subtitle category-name">Hors D'œuvres</h3>
-          <ul class="dinner__list items-list">
+          <ul class="dinner__list items-list flex-col">
             <li class="dinner__item">
               <p class="dinner__item-name item-name">Pâté de Campagne</p>
               <p class="dinner__item-description item-description">Heritage pork, Sicilian pistachios, Agen prunes</p>
@@ -86,9 +86,9 @@ function showDinnerMenu() {
           </ul>
         </div>
 
-        <div class="dinner__categories-right categories-right">
+        <div class="dinner__categories-right category-right category">
           <h3 class="dinner__subtitle category-name">Entrées</h3>
-          <ul class="dinner__list items-list">
+          <ul class="dinner__list items-list flex-col">
             <li class="dinner__item">
               <p class="dinner__item-name item-name">Cassoulet</p>
               <p class="dinner__item-description item-description">duck confit, lamb rib, Tarbais beans, saucisse de canard</p>
@@ -127,7 +127,7 @@ function showDinnerMenu() {
           </ul>
 
           <h3 class="dinner__subtitle category-name">Plat du Jour</h3>
-          <ul class="dinner__list items-list">
+          <ul class="dinner__list items-list flex-col">
             <li class="dinner__item">
               <p class="dinner__day days">Friday</p>
               <p class="dinner__item-name item-name">Bouillabaisse</p>
@@ -148,7 +148,7 @@ function showDinnerMenu() {
           </ul>
 
           <h3 class="dinner__subtitle category-name">Desserts</h3>
-          <ul class="dinner__list items-list">
+          <ul class="dinner__list items-list flex-col">
             <li class="dinner__item">
               <p class="dinner__item-name item-name">Grand Mariner Soufflé</p>
               <p class="dinner__item-description item-description">Vanilla Crème Fraîche Anglaise</p>

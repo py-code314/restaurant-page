@@ -12,38 +12,38 @@ const createFooter = () => {
   footer.innerHTML += `
     <div class="footer__links">
       <ul class="footer__list">
-        <li class="footer__list-item">
-          <img class="footer__list-image" src="${accessibilityImg}" alt="" width="25" height="25">
+        <li class="footer__item">
+          <img class="footer__image" src="${accessibilityImg}" alt="" width="25" height="25">
           <a class="footer__link" href="#" onclick="event.preventDefault()">Accessibility</a>
         </li>
         <div class="vertical-line"></div>
         
-        <li class="footer__list-item">
-          <img class="footer__list-image" src="${privacyImg}" alt="" width="25" height="25">
+        <li class="footer__item">
+          <img class="footer__image" src="${privacyImg}" alt="" width="25" height="25">
           <a class="footer__link" href="#" onclick="event.preventDefault()">Privacy</a>
         </li>
         <div class="vertical-line"></div>
         
-        <li class="footer__list-item">
-          <img class="footer__list-image" src="${giftCardImg}" alt="" width="25" height="25">
+        <li class="footer__item">
+          <img class="footer__image" src="${giftCardImg}" alt="" width="25" height="25">
           <a class="footer__link" href="#" onclick="event.preventDefault()">Gift Cards</a>
         </li>
         <div class="vertical-line"></div>
         
-        <li class="footer__list-item">
-          <img class="footer__list-image" src="${jobsImg}" alt="" width="25" height="25">
+        <li class="footer__item">
+          <img class="footer__image" src="${jobsImg}" alt="" width="25" height="25">
           <a class="footer__link" href="#" onclick="event.preventDefault()">Jobs</a>
         </li>
         <div class="vertical-line"></div>
         
-        <li class="footer__list-item">
-          <img class="footer__list-image" src="${pressImg}" alt="" width="25" height="25">
+        <li class="footer__item">
+          <img class="footer__image" src="${pressImg}" alt="" width="25" height="25">
           <a class="footer__link" href="#" onclick="event.preventDefault()">Press</a>
         </li>
         <div class="vertical-line"></div>
         
-        <li class="footer__list-item">
-          <img class="footer__list-image" src="${subscribeImg}" alt="" width="25" height="25">
+        <li class="footer__item">
+          <img class="footer__image" src="${subscribeImg}" alt="" width="25" height="25">
           <a class="footer__link footer__link--upper" href="#" onclick="event.preventDefault()">Subscribe</a>
         </li>
       </ul>

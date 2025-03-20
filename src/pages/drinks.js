@@ -5,9 +5,9 @@ function showDrinksMenu() {
     <div class="drinks">
       
       <div class="drinks__categories categories">
-        <div class="drinks__categories-left categories-left">
+        <div class="drinks__categories-left category-left category flex-col-end border-blue">
           <h3 class="drinks__subtitle category-name">Pétillants</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Mario</p>
               <p class="drinks__item-description item-description">keltis, Mario Roze, lower Styria, Slovenia</p>
@@ -22,7 +22,7 @@ function showDrinksMenu() {
           </ul>
 
           <h3 class="drinks__subtitle category-name">Blancs</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Laurent Saillard</p>
               <p class="drinks__item-description item-description">Loir & Cher, V.D.F. 2023 MAG</p>            
@@ -43,7 +43,7 @@ function showDrinksMenu() {
           </ul>
 
           <h3 class="drinks__subtitle category-name">Rosés</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Antonio Margues de Cruz</p>
               <p class="drinks__item-description item-description">Vinho Rosado, Lisboa 2023</p>
@@ -64,7 +64,7 @@ function showDrinksMenu() {
           </ul>
 
           <h3 class="drinks__subtitle category-name">Rogues</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Nadine et Gérard Marula</p>
               <p class="drinks__item-description item-description">Baconelle, V.D.F. 2022</p>
@@ -85,9 +85,9 @@ function showDrinksMenu() {
           </ul>
         </div>
 
-        <div class="drinks__categories-right categories-right">
+        <div class="drinks__categories-right category-right category">
           <h3 class="drinks__subtitle category-name">Bières</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Brasserie de la Pigeonnelle</p>
               <p class="drinks__item-description item-description">Loirette Farmhouse Ale</p>
@@ -120,7 +120,7 @@ function showDrinksMenu() {
           </ul>
 
           <h3 class="drinks__subtitle category-name">Champagne</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Émilien Feneuil</p>
               <p class="drinks__item-description item-description">Cuvée Totum, Blanc de Blancs, 1er Cru à Sermiers 2018 MAG</p>
@@ -159,7 +159,7 @@ function showDrinksMenu() {
           </ul>
 
           <h3 class="drinks__subtitle category-name">Cocktails</h3>
-          <ul class="drinks__list items-list">
+          <ul class="drinks__list items-list flex-col">
             <li class="drinks__item">
               <p class="drinks__item-name item-name">Archdruid</p>
               <p class="drinks__item-description item-description">rye, Poli Miele, Cap Corse, Campari, allspice</p>
